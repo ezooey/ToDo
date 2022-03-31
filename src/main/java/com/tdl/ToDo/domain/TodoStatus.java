@@ -1,5 +1,5 @@
 package com.tdl.ToDo.domain;
 
-public enum todoStatus {
+public enum TodoStatus {
     Y, N
 }
