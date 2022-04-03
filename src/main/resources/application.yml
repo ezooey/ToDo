@@ -1,0 +1,21 @@
+Server:
+  port: 9492
+
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/Todo
+    username: td
+    password: td
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+loggin:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
