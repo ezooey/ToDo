@@ -30,17 +30,12 @@ public class MemberController {
             return "member/joinMemberForm";
         }
         Member member = new Member();
-        member.setMemberId(form.getMemberId());
-        member.setMemberPw(form.getMemberPw());
-        member.setNickname(form.getNickname());
-        member.setEmail(form.getEmail());
-
         memberService.joinMember(member);
         return "redirect:/";
     }
 
-    @GetMapping("/member/login")
-    public String login() {
-        return "/member/login";
-    }
+//    @GetMapping("/member/login")
+//    public String login() {
+//        return "/member/login";
+//    }
 }

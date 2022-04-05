@@ -8,12 +8,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Getter @Setter
+@Getter
 public class Member {
 
     @Id @GeneratedValue
     @Column(name = "member_no")
     private int memberNo;
+
     private String memberId;
     private String memberPw;
     private String nickname;
