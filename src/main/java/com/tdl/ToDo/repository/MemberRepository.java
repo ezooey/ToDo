@@ -21,11 +21,5 @@ public class MemberRepository {
         return em.find(Member.class, memberId);
     }
 
-    public List<Member> findById(String memberId) {
-        return em.createQuery("select m from Member m where m.member_id", Member.class)
-                .setParameter("member_id", memberId)
-                .getResultList();
-    }
-
 
 }
