@@ -34,8 +34,8 @@ public class MemberController {
         return "redirect:/";
     }
 
-//    @GetMapping("/member/login")
-//    public String login() {
-//        return "/member/login";
-//    }
+    @GetMapping("/member/login")
+    public String login() {
+        return "/member/login";
+    }
 }
